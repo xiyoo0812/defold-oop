@@ -10,3 +10,7 @@ height = 640
 
 [android]
 input_method = HiddenInputField
+
+[project]
+title = defold-oop
+
