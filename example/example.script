@@ -1,0 +1,13 @@
+local protoc = require("luaoop.init")
+
+function init(self)
+	local Object = class()
+	prop = property(Object)
+	prop:reader("id", 0)
+	prop:accessor("name", "123")
+
+	local o = Object()
+
+	print(o:get_id())
+	print(o:get_name())
+end
