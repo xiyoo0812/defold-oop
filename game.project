@@ -14,3 +14,6 @@ input_method = HiddenInputField
 [project]
 title = defold-oop
 
+[library]
+include_dirs = luaoop
+
