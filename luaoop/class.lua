@@ -80,6 +80,10 @@ local function object_super(obj)
 	return obj.__super
 end
 
+local function object_address(obj)
+	return obj.__addr
+end
+
 local function mt_class_new(class, ...)
 	if rawget(class, "__singleton") then
 		local inst_obj = rawget(class, "__inst")
@@ -126,6 +130,7 @@ local function class_constructor(class, super, ...)
 			__super = super,
 			__moudle = moudle,
 			__tostring = object_tostring,
+			address = object_address,
 			super = object_super,
 		}
 		vtbl.__index = vtbl
